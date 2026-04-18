@@ -1,0 +1,14 @@
+name: First Workflow
+on: [push]
+
+jobs:
+    run-shell-commands:
+        runs-on: ubuntu-latest
+        steps:
+            - name: echo a string
+            run: echo "Hi Kaleem"
+    parallel-windows-job:
+        runs-on: windows-latest
+        steps:
+            - name: write a string
+              run: write-output "Hi Shaik"
